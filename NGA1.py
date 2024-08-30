@@ -1,7 +1,5 @@
 # Question 1
-
 # Atomic weight
-
 # List of elements
 B = [[10.012936862, 19.9], [11.009305166, 80.1]]
 Cu = [[62.929597236, 69.15], [64.927789487, 30.85]]
@@ -47,18 +45,21 @@ def get_binding_energy_per_nucleon(Isotope):
 
 
 def get_answer(Element, Isotope):
-    print(f"Natural atomic weight : {get_natural_atomic_weight(Element)}\nMass defect : {get_mass_defect(Isotope)}\nBinding energy : {get_binding_energy_per_nucleon(Isotope)}")
-    
+    print(f"Natural atomic weight : {get_natural_atomic_weight(Element)}\nMass defect : {get_mass_defect(Isotope)}\nBinding energy per nucleon: {get_binding_energy_per_nucleon(Isotope)}")
 
-get_answer(B, B10)
-
+"""
+HERE YOU CAN CHANGE THE ELEMENT AND ISOTOPE AND GET THE ANSWER
+"""
+get_answer(In, In115)
 
 
 # Question 2
-# My isotope, change numerical values for yours
-fission_energy_MeV = 212  # MeV
+"""
+MY ISOTOPE, CHANGE VALUES FOR YOURS ACCORDINGLY THEN RUN THE FILE
+"""
+fission_energy_MeV = 196  # MeV
 mass = 1  # g
-molar_mass = 244.062751  # [g/mol]
+molar_mass = 232.038054  # [g/mol]
 
 # constants
 eV = 1.602176634e-19  # [J]
@@ -77,6 +78,9 @@ energy_released_MWd = energy_released_J / (3600 * 24 * 10**6) / mass
 
 print(f"Energy released in kWh/g : {energy_released_kWh}\nEnergy released in MWd/g : {energy_released_MWd}")
 
+"""
+RUN THE FILE
+"""
 
 
 
