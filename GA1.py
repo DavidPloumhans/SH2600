@@ -12,8 +12,8 @@ M_water = 18.015694 # molecular weight of water [g/mol]
 Na = 6.02214076e23 # Avogadro's number [mol^-1]
 
 # calculation
-number_of_mol = number_hydrogen_atoms / Na # [mol]
-mass = number_of_mol * M_water # [g]
+number_of_mol_of_water = number_hydrogen_atoms / (Na * 2) # [mol]
+mass = number_of_mol_of_water * M_water # [g]
 volume = mass / rho_water # [cm^3]
 radius = diameter / 2 # [cm]
 height = volume / (math.pi * radius**2) # [cm]
